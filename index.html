@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Webpage Elements</title>
+    <style>
+        /* General page setup */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /*  Simple Navigation Menu */
+        .navigationbar {
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #092f4b;
+            padding: 15px 20px;
+        }
+        .navigationbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px; /* Adds space between links */
+        }
+        .navigationbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .navigationbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container to center the main content */
+
+        #home{
+            text-align: center;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .introduction {
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            text-align: left;
+        }
+        .main-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Webpage with Heading, P, and Image */
+        
+        .content-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        /* Basic Form */
+
+        .simple-form {
+            display: flex;
+            align-items: center;
+            max-inline-size: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            block-size: auto;
+        }
+        .feedback_form-heading {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .form-section {
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid #ddd;
+        }
+        .simple-form input[type="text"] {
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .simple-form button {
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             font-weight: bold;
+            padding: 10px 20px;
+            background-color: #073693;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .simple-form button:hover {
+            background-color: #2980b9;
+        }
+        img.placeholder-image {
+            display: flex;
+            align-items: center;
+            max-inline-size: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            block-size: auto;
+        }
+    </style>
+    <script>
+        /* Getting a Grey Placeholder Image from src from internet */
+         src="https://kit.fontawesome.com/YOUR-KIT-ID.js" 
+    </script>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navigationbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        
+        <!--  Heading, Paragraph, and Image -->
+        <section class="content-section" id="home">
+            <h1>Welcome to the Site</h1>
+            <p class="introduction">This is a simple paragraph demonstrating basic HTML structure. Below is an example image acting as a placeholder to complete the layout.</p>
+            <img  class ="placeholder-image" src="https://thumbs.dreamstime.com/z/blank-gray-white-image-placeholder-icon-design-180792688.jpg?ct=jpeg" alt="A grey placeholder photo">
+        </section>
+
+        <!-- Basic Form with Input and Submit Button -->
+        <section class="form-section" id="contact">
+            <h2 class="feedback_form-heading">Please give us your feedback</h2>
+            <form class="simple-form" action="#" method="POST">
+                <input type="text" name="feedback" placeholder="Enter your feedback" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </div>
+
+</body>
+</html>
